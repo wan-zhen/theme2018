@@ -1,0 +1,5 @@
+@import '../app/address/address-theme';
+
+@mixin material-app-theme($theme) {
+  @include address-theme($theme);
+}

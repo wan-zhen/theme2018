@@ -14,7 +14,11 @@ export class NavigationComponent {
     .pipe(
       map(result => result.matches)
     );
-
+    switchTheme(arg) {
+      console.log(document.querySelector('link.app-theme').getAttribute('href'));
+       const theme = `assets/custom-${arg}.css`;
+       document.querySelector('link.app-theme').setAttribute('href', theme);
+    }
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }

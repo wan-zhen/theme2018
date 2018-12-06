@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 
 const routes: Routes = [
-  {path:'',component:NavigationComponent}
+  {path: '', component: NavigationComponent}
 ];
 
 @NgModule({
